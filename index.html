@@ -18,7 +18,7 @@
     --brass:    #B89160;
     --brass-dk: #8A6A40;
     --display: 'Fraunces', Georgia, serif;
-    --body:    'Newsreader', Georgia, serif;
+    --body:    'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   }
   * { box-sizing: border-box; }
   html, body {
@@ -27,6 +27,7 @@
     color: var(--ink);
     font-family: var(--body);
     font-size: 16px;
+    font-weight: 300;
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
@@ -54,6 +55,7 @@
   }
   .topbar .meta {
     font-family: var(--body);
+    font-weight: 400;
     font-size: 14px;
     color: var(--cream);
   }
@@ -130,7 +132,7 @@
     align-items: center;
     gap: 12px;
     margin-bottom: 28px;
-    font-family: var(--body);
+    font-family: 'Newsreader', Georgia, serif;
     color: var(--wine);
     font-weight: 600;
     font-size: 12px;
@@ -154,14 +156,18 @@
     opacity: 0.6;
   }
   .block-title {
-    font-family: var(--display);
-    font-variation-settings: 'opsz' 48, 'SOFT' 30;
-    font-weight: 600;
+    font-family: var(--body);
+    font-weight: 700;
     font-size: clamp(36px, 3.6vw, 56px);
     margin: 0 0 8px 0;
     color: var(--ink);
     letter-spacing: -0.02em;
     line-height: 1.05;
+  }
+  .block-title.rq {
+    font-family: var(--display);
+    font-variation-settings: 'opsz' 48, 'SOFT' 30;
+    font-weight: 600;
   }
   .block-title em {
     font-style: italic;
@@ -192,7 +198,7 @@
   h3:first-child { margin-top: 0; }
 
   em.term { color: var(--wine); font-style: italic; font-weight: 500; }
-  strong { font-weight: 600; }
+  strong { font-weight: 800; }
 
   .q-prompt {
     font-family: var(--display);
@@ -321,7 +327,7 @@
     margin-bottom: 14px;
   }
   .pull-stat .cap {
-    font-family: var(--display);
+    font-family: var(--body);
     font-style: italic;
     font-size: 17px;
     line-height: 1.4;
@@ -345,6 +351,8 @@
     gap: 40px;
   }
   .study-col h3 {
+    font-family: var(--body);
+    font-weight: 700;
     margin-top: 0;
     margin-bottom: 22px;
     padding-bottom: 6px;
@@ -370,9 +378,9 @@
     font-size: 14px;
   }
   .pitch-row .taste {
-    font-family: var(--display);
+    font-family: var(--body);
+    font-weight: 700;
     font-style: italic;
-    font-weight: 600;
     color: var(--ink);
     font-size: 15px;
     text-align: right;
@@ -408,6 +416,7 @@
     margin-top: 6px;
     font-family: var(--body);
     font-size: 10px;
+    font-weight: 700;
     color: var(--brass-dk);
     text-transform: uppercase;
     letter-spacing: 0.15em;
@@ -417,10 +426,8 @@
   }
 
   .finding-title {
-    font-family: var(--display);
-    font-style: italic;
-    font-variation-settings: 'opsz' 14;
-    font-weight: 600;
+    font-family: var(--body);
+    font-weight: 700;
     font-size: 15px;
     color: var(--wine);
     margin: 0 0 10px 0;
@@ -484,8 +491,8 @@
     font-weight: 500;
     font-size: 17px;
   }
-  .results .down { color: var(--wine); font-weight: 700; }
-  .results .up   { color: var(--wine); font-weight: 700; }
+  .results .down { color: var(--wine); font-weight: 800; font-size: 22px; }
+  .results .up   { color: var(--wine); font-weight: 800; font-size: 22px; }
 
   /* Asymmetric finding callout */
   .finding {
@@ -522,8 +529,8 @@
     font-family: var(--display);
     font-style: italic;
     color: var(--soft);
-    font-size: 12px;
-    letter-spacing: 0.18em;
+    font-size: 19px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     display: block;
     margin-bottom: 8px;
@@ -540,7 +547,7 @@
   .finding .text strong {
     color: var(--soft);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
   }
 
   /* =========== FUTURE RESEARCH =========== */
@@ -591,10 +598,9 @@
     display: block;
   }
   .impl-card .text {
-    font-family: var(--display);
-    font-style: italic;
-    font-size: 17px;
-    line-height: 1.4;
+    font-family: var(--body);
+    font-size: 15px;
+    line-height: 1.5;
     color: var(--ink);
     margin: 0;
   }
@@ -610,7 +616,7 @@
   .theme-banner .label {
     font-family: var(--body);
     font-size: 11px;
-    color: var(--brass);
+    color: var(--cream);
     text-transform: uppercase;
     letter-spacing: 0.3em;
     font-weight: 600;
@@ -627,10 +633,9 @@
     margin-bottom: 16px;
   }
   .theme-banner .why {
-    font-family: var(--display);
-    font-style: italic;
-    font-size: 18px;
-    line-height: 1.5;
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.55;
     max-width: 880px;
     margin: 0 auto;
     color: var(--cream);
@@ -718,6 +723,7 @@
     border: none; padding: 0;
   }
   footer p {
+    font-family: 'Newsreader', Georgia, serif;
     font-size: 12px;
     line-height: 1.6;
     margin-bottom: 8px;
@@ -769,7 +775,7 @@
       <span>Research Question</span>
       <span class="rule"></span>
     </div>
-    <h2 class="block-title">How does <em>music</em> shape the way we perceive the taste and flavor of food?</h2>
+    <h2 class="block-title rq">How does <em>music</em> shape the way we perceive the taste and flavor of food?</h2>
   </div>
 </section>
 
@@ -811,7 +817,7 @@
       <span>Previous Research: Study 1</span>
       <span class="rule"></span>
     </div>
-    <h2 class="block-title">As <em style="color: var(--ink);">Bitter</em> as a <em style="color: var(--ink);">Trombone</em></h2>
+    <h2 class="block-title">As Bitter as a Trombone</h2>
     <p class="block-sub">Crisinel &amp; Spence (2010) &nbsp;·&nbsp; <em>Attention, Perception, &amp; Psychophysics</em></p>
 
     <details class="bg-details">
@@ -1017,11 +1023,11 @@
       </div>
 
       <div class="future-q">
-        <h3><span class="qnum">Q2.</span>Low-level pitch–taste correspondence, or <em>higher-level priming?</em></h3>
-        <p>Crisinel &amp; Spence's data point to low-level mechanisms; Campinho et al. propose multiple higher-level ones (semantic priming, emotional valence, color congruency). Design a <span class="hov">2×2 study<span class="tip"><strong>Proposed 2×2 Design</strong>Cross <em>pitch profile</em> (high vs. low) with <em>emotional valence</em> (sweet-feeling vs. sour-feeling):<ul><li>High pitch + sweet-feeling</li><li>High pitch + sour-feeling</li><li>Low pitch + sweet-feeling</li><li>Low pitch + sour-feeling</li></ul></span></span> crossing pitch profile × emotional valence.</p>
+        <h3><span class="qnum">Q2.</span>Abstract semantic coding, or <em>contextual priming?</em></h3>
+        <p>Both papers argue for higher-level mechanisms but disagree on which. Crisinel &amp; Spence point to abstract semantic coding (pitch and taste matched on shared conceptual dimensions like evaluation); Campinho et al. propose contextual mechanisms (semantic priming, emotional valence, color congruency). Design a <span class="hov">2×2 study<span class="tip"><strong>Proposed 2×2 Design</strong>Cross <em>pitch profile</em> (high vs. low) with <em>emotional valence</em> (sweet-feeling vs. sour-feeling):<ul><li>High pitch + sweet-feeling</li><li>High pitch + sour-feeling</li><li>Low pitch + sweet-feeling</li><li>Low pitch + sour-feeling</li></ul></span></span> crossing pitch profile × emotional valence.</p>
         <ul>
-          <li><em class="term">Pitch-driven</em> → high-pitch conditions pattern together regardless of valence</li>
-          <li><em class="term">Valence-driven</em> → sweet-feeling conditions pattern together regardless of pitch</li>
+          <li><em class="term">Semantic coding</em> → high-pitch conditions pattern together regardless of valence</li>
+          <li><em class="term">Contextual priming</em> → emotionally-congruent conditions pattern together regardless of pitch</li>
         </ul>
       </div>
     </div>
